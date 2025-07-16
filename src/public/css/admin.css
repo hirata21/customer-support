@@ -1,0 +1,268 @@
+/* ----------------------------
+ ベース設定
+---------------------------- */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #fffaf7;
+    color: #5e4b3c;
+    margin: 0;
+    padding: 0;
+}
+
+/* ----------------------------
+ ヘッダー
+---------------------------- */
+.header {
+    position: relative;
+    background-color: #fff;
+    padding: 20px 0;
+    display: flex;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+/* タイトル下のサブタイトル */
+.subtitle {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+/* ロゴ中央寄せ */
+.logo {
+    font-size: 28px;
+    font-family: 'Georgia', serif;
+    color: #7e6b5a;
+    margin: 0 auto;
+}
+
+/* ヘッダー右側にログアウトボタン配置 */
+.header-right {
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    transform: translateY(-50%);
+}
+
+/* ログアウトボタンのスタイル */
+.header-button {
+    padding: 6px 12px;
+    font-size: 14px;
+    color: #bfaea0;
+    border: 1px solid #e0d7d0;
+    border-radius: 4px;
+    background-color: transparent;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.header-button:hover {
+    background-color: #f0eae6;
+    color: #7e6b5a;
+}
+
+/* ----------------------------
+ コンテナ（ページ全体の幅など）
+---------------------------- */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px 0;
+}
+
+/* ----------------------------
+ 検索フォーム
+---------------------------- */
+.search-form {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    /* 折り返し防止 */
+    align-items: center;
+}
+
+/* 共通の入力フォームスタイル */
+.search-form input,
+.search-form select,
+.search-form button,
+.search-form a {
+    height: 40px;
+    padding: 0 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* キーワード入力欄は伸縮可能 */
+.form-keyword {
+    flex-grow: 1;
+    width: 280px;
+    border: 1px solid #e0d4c4;
+    background-color: #fff;
+    color: #5e4b3c;
+}
+
+/* 性別セレクト */
+.form-gender {
+    width: 80px;
+    border: 1px solid #e0d4c4;
+    background-color: #eeeeee;
+    color: #5e4b3c;
+}
+
+/* カテゴリセレクト */
+.form-category {
+    min-width: 50px;
+    border: 1px solid #e0d4c4;
+    background-color: #eeeeee;
+    color: #5e4b3c;
+}
+
+/* 日付入力 */
+.form-date {
+    width: 120px;
+    border: 1px solid #e0d4c4;
+    background-color: #eeeeee;
+    color: #5e4b3c;
+}
+
+/* 検索ボタン */
+.btn-search {
+    width: 80px;
+    background-color: #a89076;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* リセットボタン（検索フォームの右端） */
+.btn-reset {
+    margin-left: auto;
+    width: 80px;
+    background-color: #e0d4c4;
+    color: #5e4b3c;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+}
+
+/* ----------------------------
+ エクスポートボタン
+---------------------------- */
+.btn-export {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f9f0e7;
+    color: #5e4b3c;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    border: 1px solid #e0d4c4;
+    margin: 20px 0;
+}
+
+/* ----------------------------
+ テーブル（一覧表示）
+---------------------------- */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/* テーブルヘッダー */
+.data-table thead {
+    background-color: #a89076;
+    color: white;
+}
+
+/* テーブルセル（共通） */
+.data-table th,
+.data-table td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #e0d4c4;
+    text-align: left;
+}
+
+/* 偶数行に背景色を設定 */
+.data-table tbody tr:nth-child(even) {
+    background-color: #fdf8f2;
+}
+
+/* テーブル内リンクボタン */
+.data-table a {
+    background-color: #f9f0e7;
+    border: 1px solid #e0d4c4;
+    color: #5e4b3c;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+/* テーブル周辺の操作ブロック */
+.table-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+}
+
+/* ----------------------------
+ ページネーション（Laravel用）
+---------------------------- */
+.pagination-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pagination {
+    display: flex;
+    gap: 6px;
+    list-style: none;
+}
+
+.pagination li a,
+.pagination li span {
+    padding: 6px 12px;
+    border: 1px solid #e0d4c4;
+    background-color: #f9f0e7;
+    color: #5e4b3c;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* 現在のページ表示 */
+.pagination li.active span {
+    background-color: #a89076;
+    color: white;
+    border-color: #a89076;
+}
+
+/* ----------------------------
+ 詳細ボタン（モーダル表示用）
+---------------------------- */
+.btn-detail {
+    background-color: white;
+    color: #ccc !important;
+    border: 1px solid #ccc;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none !important;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-detail:hover {
+    background-color: #f0f0f0;
+}

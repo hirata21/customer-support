@@ -1,0 +1,63 @@
+/* ----------------------------
+ ベース設定
+---------------------------- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*{{-- コンテンツ全体のラッパー --}}*/
+.thank-you-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*{{-- 背景に大きく薄く表示する "Thank you" テキスト --}}*/
+.background-text {
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    transform: translate(calc(-50% + 30px), calc(-50% + 50px));
+    font-size: 15vw;
+    color: rgba(0, 0, 0, 0.03);
+    font-weight: bold;
+    pointer-events: none;
+    user-select: none;
+    width: 100%;
+    white-space: nowrap;
+    z-index: 0;
+}
+
+/*{{-- メッセージテキスト（中央に表示） --}}*/
+.message {
+    position: relative;
+    font-size: 28px;
+    color: #6f6259;
+    margin: 0 0 40px 0;
+    z-index: 1;
+    /* 背景テキストの上に表示 */
+}
+
+/*{{-- 「HOME」ボタンスタイル --}}*/
+.home-button {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #6f6259;
+    color: #fff;
+    padding: 10px 25px;
+    font-size: 14px;
+    z-index: 1;
+    border: none;
+    cursor: pointer;
+}

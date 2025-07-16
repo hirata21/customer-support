@@ -1,0 +1,129 @@
+/* ============================
+   全体の基本スタイル設定
+============================ */
+body {
+    font-family: "Helvetica Neue", sans-serif;
+    /* ベースのフォント設定 */
+    background-color: #f3ece4;
+    color: #5c4835;
+    margin: 0;
+    /* ページ全体のマージンをリセット */
+}
+
+/* ============================
+   ヘッダー
+============================ */
+.header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    /* 下線で区切り */
+    text-align: center;
+}
+
+/* ロゴ中央寄せ＆装飾 */
+.logo {
+    font-size: 28px;
+    font-family: 'Georgia', serif;
+    color: #7e6b5a;
+    margin: 0 auto;
+}
+
+/* registerボタンの右寄せ位置調整 */
+.header-right {
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    transform: translateY(-50%);
+}
+
+/* registerボタンのスタイル */
+.header-button {
+    padding: 6px 12px;
+    font-size: 14px;
+    color: #bfaea0;
+    background-color: transparent;
+    border: 1px solid #e0d7d0;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.header-button:hover {
+    background-color: #f0eae6;
+    color: #7e6b5a;
+}
+
+/* ============================
+   メイン部分
+============================ */
+.main {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* ログイン画面タイトル */
+.login-title {
+    font-size: 24px;
+    color: #5c4835;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* ログインボックス（フォーム） */
+.login-box {
+    background-color: #fff;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* ============================
+   フォーム項目
+============================ */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* ラベルのスタイル */
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+/* 入力欄のスタイル */
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    background-color: #f3f3f3;
+    border: none;
+    border-radius: 4px;
+}
+
+/* ============================
+   ボタンスタイル
+============================ */
+.button-wrapper {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* ログインボタン */
+.login-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #8b7969;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

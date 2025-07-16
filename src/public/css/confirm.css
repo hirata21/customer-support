@@ -1,0 +1,101 @@
+/*------------------------------------------
+  ベース設定
+------------------------------------------*/
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f8f5f2;
+    margin: 0;
+    color: #5c4835;
+}
+
+/*------------------------------------------
+  ヘッダー設定
+------------------------------------------*/
+.header {
+    text-align: center;
+    padding: 30px 0;
+    background-color: white;
+}
+
+.logo {
+    font-size: 28px;
+    color: #8b7969;
+    margin: 0;
+}
+
+/*------------------------------------------
+  メインコンテンツ設定
+------------------------------------------*/
+.main {
+    text-align: center;
+    padding: 30px;
+    background-color: #ffffff;
+}
+
+.title {
+    font-size: 22px;
+    margin-bottom: 30px;
+    color: #5c4835;
+}
+
+/*------------------------------------------
+  確認テーブル（確認画面用）
+------------------------------------------*/
+.confirm-table {
+    margin: 0 auto 30px auto;
+    width: 80%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.confirm-table th,
+.confirm-table td {
+    border: 1px solid #e0dcd6;
+    padding: 15px;
+    text-align: left;
+    font-size: 15px;
+}
+
+.confirm-table th {
+    background-color: #bdaea0;
+    color: white;
+    width: 30%;
+}
+
+.confirm-table td {
+    background-color: #fff;
+}
+
+/*------------------------------------------
+  ボタンエリア
+------------------------------------------*/
+.button-area {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* 送信ボタン */
+.submit-button{
+    background-color: #8b7969;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+/* 修正ボタン */
+.back-button {
+    background-color: #ffffff;
+    color: #5e4b3c;
+    border: 1px solid #ccc;
+    padding: 10px 30px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: underline;
+    /* 文字の下に線を入れる */
+    border-radius: 4px;
+}
