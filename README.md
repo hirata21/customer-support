@@ -2,23 +2,23 @@
 
 ## 環境構築手順
 
-# 1. Dockerコンテナのビルドと起動
+1. Dockerコンテナのビルドと起動
 docker-compose build
 docker-compose up -d
 
-# 2. Laravelの依存パッケージをインストール
+2. Laravelの依存パッケージをインストール
 docker-compose exec php composer install
 
-# 3. .envファイルを作成
+3. .envファイルを作成
 cp .env.example .env
 
-# 4. アプリケーションキーの生成
+4. アプリケーションキーの生成
 docker-compose exec php php artisan key:generate
 
-# 5. データベースマイグレーションの実行
+5. データベースマイグレーションの実行
 docker-compose exec php php artisan migrate
 
-# 6. シーディングの実行
+6. シーディングの実行
 docker-compose exec php php artisan db:seed
 
 
