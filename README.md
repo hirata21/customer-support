@@ -1,8 +1,7 @@
-# アプリケーション名
-お問い合わせフォーム
+# お問い合わせフォーム
 
 ## 環境構築手順
-```bash
+
 # 1. Dockerコンテナのビルドと起動
 docker-compose build
 docker-compose up -d
@@ -22,6 +21,7 @@ docker-compose exec php php artisan migrate
 # 6. シーディングの実行
 docker-compose exec php php artisan db:seed
 
+
 ## 使用技術(実行環境)
 - Laravel 8.75
 - PHP 7.4.9
@@ -37,3 +37,4 @@ docker-compose exec php php artisan db:seed
 - アプリケーション：http://localhost
 - phpMyAdmin：http://localhost:8080
   （ログインユーザー：`laravel_user` / パスワード：`laravel_pass`）
+
